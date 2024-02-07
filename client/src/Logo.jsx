@@ -16,7 +16,7 @@ export default function Logo() {
           </g>
         </g>
       </svg>
-      RandomChat
+      MERNChat
     </div>
   );
 }

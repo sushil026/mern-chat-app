@@ -66,5 +66,5 @@ function RegisterAndLoginForm() {
     </div>
   );
 }
-// #38bdf8
+
 export default RegisterAndLoginForm;
