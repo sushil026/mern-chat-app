@@ -20,7 +20,7 @@ export default function Chat() {
   }, []);
 
   function connectToWs() {
-    const ws = new WebSocket("ws://localhost:3002");
+    const ws = new WebSocket("ws://mern-chat-beige.vercel.app");
     setWs(ws);
     ws.addEventListener("message", handleMessage);
     ws.addEventListener("close", () => connectToWs());
@@ -33,7 +33,7 @@ export default function Chat() {
     });
     setOnlineUsers(online);
   }
-  
+
   function handleMessage(ev) {
     const msgData = JSON.parse(ev.data);
     if ("online" in msgData) {
