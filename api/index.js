@@ -19,6 +19,7 @@ app.use(
   cors({
     credentials: true,
     origin: "https://mern-chat-beige.vercel.app",
+    allowedHeaders: ["Content-Type", "Authorization", "other-header"],
   })
 );
 
